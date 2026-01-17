@@ -27,7 +27,7 @@ if { $valLen == 0 } {
       set xlateOutVals [ list "no Name" ERR ] 
    } else {
       package require sqlite
-      set dbName "/hci/qdx5.5/integrator/sqliteCchs/$dbName"
+      set dbName "/path/to/database/$dbName"
       sqlite DBCMD $dbName  
 
       set query "select val from $dbTable where name='$dbVal'"
