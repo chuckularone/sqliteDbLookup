@@ -10,9 +10,9 @@
 #               
 package require sqlite
 
-proc sqltbllookup { tableName keyVal { sqlDBPath /hci/qdx5.5/integrator/sqliteCchs/clTables.db } { debug 0 } } {
+proc sqltbllookup { tableName keyVal { sqlDBPath /path/to/database/clTables.db } { debug 0 } } {
 
-# sqlite DBCMD /hci/qdx5.5/integrator/sqliteCchs/clTables.db;
+# sqlite DBCMD /path/to/database/clTables.db;
 sqlite DBCMD $sqlDBPath
 
 if { $debug } { echo "key: $keyVal" } 
