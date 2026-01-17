@@ -27,7 +27,7 @@ if { [ string length $dbName ] = 0 } {
       set xlateOutVals [ list "no Name" ERR ] 
    } else {
       package require sqlite
-      set dbName "/sitesdevl/sqlite/$dbName"
+      set dbName "/path/to/database/$dbName"
       sqlite DBCMD $dbName;           # open database
 
       set query {select val from $dbTable where name='$dbVal'}
